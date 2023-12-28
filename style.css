@@ -29,10 +29,18 @@ body {
   border-radius: 10px;
   margin: 10px;
   box-shadow: 2px 4px 5px #0000004d;
-  /* transform: translateX(200%); */
+  transform: translateX(200%);
   transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%)
 }
 
 .box.show {
   transform: translateX(0);
+}
+
+.box h2 {
+  font-family: 45px;
 }
